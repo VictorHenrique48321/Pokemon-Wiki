@@ -1,0 +1,108 @@
+@media screen and (min-width: 0){
+
+/* conteudo da tabela sobre os tipos de pokemons */
+
+  .main-types {
+    width: 30%;
+    flex-direction: column;
+  }
+
+  .main-type {
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .main-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-weak, .main-strong {
+    margin: .25rem 0;
+  }
+
+/* conteudo sobre os status aplicados nos pokemons */
+
+  .main-listStatus {
+    width: 100%;
+    text-align: center;
+  }
+
+  .main-statusTitle {
+    width: 100%;
+  }
+
+  .main-statusInfo {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0
+  }
+}
+
+@media screen and (min-width: 900px){
+
+/* conteudo da tabela sobre os tipos de pokemons */
+
+  .main-types {
+    flex-direction: row;
+    width: 90%;
+  }
+
+  .main-type {
+    margin: auto 0;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    width: 55px;
+  }
+
+  .main-info {
+    flex-direction: row;
+  }
+
+  .main-against {
+    margin-right: 2rem;
+  }
+
+  .main-weak, .main-strong {
+    margin-left: 1.25rem;
+    width: 80px;
+  }
+}
+
+@media screen and (min-width: 1280px){
+  .main-types {
+    width: 45%;
+  }
+
+  .main-type {
+    width: 50px;
+    margin: auto 0;
+    margin-right: 1rem;
+    margin-left: 0.5rem;
+  }
+
+  .main-against {
+    margin-right: 0;
+  }
+
+  .main-weak, .main-strong {
+    width: 65px;
+    margin-left: 0.25rem;
+  }
+
+
+  .main-listStatus {
+    width: 90%;
+    text-align: inherit;
+  }
+  .main-statusTitle {
+    width: 80%;
+  }
+
+  .main-statusInfo {
+    width: 80%;
+    margin: 0;
+    padding: 1rem;
+  }
+
+}

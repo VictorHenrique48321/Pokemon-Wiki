@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../css/header/header.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/main/battleInfo/battleInfo-types.css">
+  <link rel="stylesheet" href="../css/main/battleInfo/battleInfo-status.css">
+  <link rel="stylesheet" href="../css/main/mediaQuery.css">
+  <link rel="stylesheet" href="../css/header/mediaQuery.css">
+  <link rel="stylesheet" href="../css/main/battleInfo/battleInfo-mediaQuery.css">
+  <title>Pagina inicial</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header-main" data-main>
+      <div class="header-generation" data-generation>
+        <div class="header-background">
+          <p class="header-game" data-game><a href=../home.html>Home</a></p>
+        </div>
+      </div>
+      <div class="header-generation" data-generation>
+        <div class="header-background">
+          <p class="header-game" data-game><a href="./battleInfo.html">Battle Info</a></p>
+        </div>
+      </div>
+      <div class="header-generation" data-generation>
+        <div class="header-background">
+          <p class="header-game" data-game><a href="./items.html">Items</a></p>
+        </div>
+      </div>
+      <div class="header-generation" data-generation>
+        <div class="header-background">
+          <p class="header-game" data-game><a href="#">Pokedex</a></p>
+        </div>
+      </div>
+      <div class="header-generation" data-generation>
+        <div class="header-background">
+          <p class="header-game" data-version>Games</p>
+        </div>
+      </div>
+      <div class="header-generation" data-generation>
+        <div class="header-background">
+          <p class="header-game" data-game><a href="#">My Team</a></p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="main-header">
+      <h2 class="main-title">Pokemon Database</h2>
+      <p class="main-introduction">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis congue condimentum.
+        Nunc fringilla augue in metus consectetur, quis imperdiet magna elementum. Vestibulum varius
+        dictum nisi at egestas. Sed viverra nunc erat, sed pharetra metus congue sit amet. Proin sed
+        dictum dui, nec euismod erat. Morbi congue varius lacus sit amet semper. Phasellus facilisis nisi
+        vestibulum, accumsan leo et, viverra nibh.
+      </p>
+    </div>
+    <div class="main-typesInformation" data-content>
+      <div class="main-types" data-types>
+        <p class="main-type" data-type>Fire</p>
+        <div class="main-border">
+          <ul class="main-info">
+            <li class="main-against">Strong Against:</li>
+            <li data-fontColor class="main-weak">Grass</li>
+            <li data-fontColor class="main-weak">Ice</li>
+            <li data-fontColor class="main-weak">Bug</li>
+          </ul>
+          <ul class="main-info">
+            <li class="main-against">Weak Against:</li>
+            <li data-fontColor class="main-strong">Water</li>
+            <li data-fontColor class="main-strong">Ground</li>
+            <li data-fontColor class="main-strong">Rock</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-types" data-types>
+        <p class="main-type" data-type>Grass</p>
+        <div class="main-border">
+          <ul class="main-info">
+            <li class="main-against">Strong Against:</li>
+            <li data-fontColor class="main-weak">Water</li>
+            <li data-fontColor class="main-weak">Ground</li>
+            <li data-fontColor class="main-weak">Rock</li>
+          </ul>
+          <ul class="main-info">
+            <li class="main-against">Weak Against:</li>
+            <li data-fontColor class="main-strong">Fire</li>
+            <li data-fontColor class="main-strong">Ice</li>
+            <li data-fontColor class="main-strong">Poison</li>
+            <li data-fontColor class="main-strong">Flying</li>
+            <li data-fontColor class="main-strong">Bug</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-types" data-types>
+        <p class="main-type" data-type>Water</p>
+        <div class="main-border">
+          <ul class="main-info">
+            <li class="main-against">Strong Against:</li>
+            <li data-fontColor class="main-weak">Fire</li>
+            <li data-fontColor class="main-weak">Ground</li>
+            <li data-fontColor class="main-weak">Rock</li>
+          </ul>
+          <ul class="main-info">
+            <li class="main-against">Weak Against:</li>
+            <li data-fontColor class="main-strong">Eletric</li>
+            <li data-fontColor class="main-strong">Grass</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-types" data-types>
+        <p class="main-type" data-type>Normal</p>
+        <div class="main-border">
+          <ul class="main-info">
+            <li class="main-against">Normal Against:</li>
+            <li data-fontColor id="main-normal"class="main-weak">All types except for ghost</li>
+          </ul>
+          <ul class="main-info">
+            <li class="main-against">Weak Against:</li>
+            <li data-fontColor class="main-strong">Fighting</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-types" data-types>
+        <p class="main-type" data-type>Flying</p>
+        <div class="main-border">
+          <ul class="main-info">
+            <li class="main-against">Strong Against:</li>
+            <li data-fontColor class="main-weak">Grass</li>
+            <li data-fontColor class="main-weak">Fighting</li>
+            <li data-fontColor class="main-weak">Bug</li>
+          </ul>
+          <ul class="main-info">
+            <li class="main-against">Weak Against:</li>
+            <li data-fontColor class="main-strong">Eletric</li>
+            <li data-fontColor class="main-strong">Ice</li>
+            <li data-fontColor class="main-strong">Rock</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-types" data-types>
+        <p class="main-type" data-type>Ice</p>
+        <div class="main-border">
+          <ul class="main-info">
+            <li class="main-against">Strong Against:</li>
+            <li data-fontColor class="main-weak">Grass</li>
+            <li data-fontColor class="main-weak">Ground</li>
+            <li data-fontColor class="main-weak">Flying</li>
+            <li data-fontColor class="main-weak">Dragon</li>
+          </ul>
+          <ul class="main-info">
+            <li class="main-against">Weak Against:</li>
+            <li data-fontColor class="main-strong">Fire</li>
+            <li data-fontColor class="main-strong">Fighting</li>
+            <li data-fontColor class="main-strong">Rock</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-types" data-types>
+        <p class="main-type" data-type>Poison</p>
+        <div class="main-border">
+          <ul class="main-info">
+            <li class="main-against">Strong Against:</li>
+            <li data-fontColor class="main-weak">Grass</li>
+          </ul>
+          <ul class="main-info">
+            <li class="main-against">Weak Against:</li>
+            <li data-fontColor class="main-strong">Ground</li>
+            <li data-fontColor class="main-strong">Psychic</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-types" data-types>
+        <p class="main-type" data-type>Psychic</p>
+        <div class="main-border">
+          <ul class="main-info">
+            <li class="main-against">Strong Against:</li>
+            <li data-fontColor class="main-weak">Rock</li>
+            <li data-fontColor class="main-weak">Ice</li>
+            <li data-fontColor class="main-weak">Bug</li>
+          </ul>
+          <ul class="main-info">
+            <li class="main-against">Weak Against:</li>
+            <li data-fontColor class="main-strong">Grass</li>
+            <li data-fontColor class="main-strong">Ice</li>
+            <li data-fontColor class="main-strong">Bug</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-types" data-types>
+        <p class="main-type" data-type>Ground</p>
+        <div class="main-border">
+          <ul class="main-info">
+            <li class="main-against">Strong Against:</li>
+            <li data-fontColor class="main-weak">Fire</li>
+            <li data-fontColor class="main-weak">Eletric</li>
+            <li data-fontColor class="main-weak">Poison</li>
+            <li data-fontColor class="main-weak">Rock</li>
+          </ul>
+          <ul class="main-info">
+            <li class="main-against">Weak Against:</li>
+            <li data-fontColor class="main-strong">Water</li>
+            <li data-fontColor class="main-strong">Grass</li>
+            <li data-fontColor class="main-strong">Ice</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-types" data-types>
+        <p class="main-type" data-type>Ghost</p>
+        <div class="main-border">
+          <ul class="main-info">
+            <li class="main-against">Strong Against:</li>
+            <li data-fontColor class="main-weak">Psychic</li>
+            <li data-fontColor class="main-weak">Ghost</li>
+          </ul>
+          <ul class="main-info">
+            <li class="main-against">Weak Against:</li>
+            <li data-fontColor class="main-strong">Ghost</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-types" data-types>
+        <p class="main-type" data-type>Fighting</p>
+        <div class="main-border">
+          <ul class="main-info">
+            <li class="main-against">Strong Against:</li>
+            <li data-fontColor class="main-weak">Normal</li>
+            <li data-fontColor class="main-weak">Ice</li>
+            <li data-fontColor class="main-weak">Rock</li>
+          </ul>
+          <ul class="main-info">
+            <li class="main-against">Weak Against:</li>
+            <li data-fontColor class="main-strong">Flying</li>
+            <li data-fontColor class="main-strong">Psychic</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-types" data-types>
+        <p class="main-type" data-type>Eletric</p>
+        <div class="main-border">
+          <ul class="main-info">
+            <li class="main-against">Strong Against:</li>
+            <li data-fontColor class="main-weak">Water</li>
+            <li data-fontColor class="main-weak">Flying</li>
+          </ul>
+          <ul class="main-info">
+            <li class="main-against">Weak Against:</li>
+            <li data-fontColor class="main-strong">Ground</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-types" data-types>
+        <p class="main-type" data-type>Dragon</p>
+        <div class="main-border">
+          <ul class="main-info">
+            <li class="main-against">Strong Against:</li>
+            <li data-fontColor class="main-weak">Dragon</li>
+          </ul>
+          <ul class="main-info">
+            <li class="main-against">Weak Against:</li>
+            <li data-fontColor class="main-strong">Dragon</li>
+            <li data-fontColor class="main-strong">Ice</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-types" data-types>
+        <p class="main-type" data-type>Bug</p>
+        <div class="main-border">
+          <ul class="main-info">
+            <li class="main-against">Strong Against:</li>
+            <li data-fontColor class="main-weak">Grass</li>
+            <li data-fontColor class="main-weak">Psychic</li>
+          </ul>
+          <ul class="main-info">
+            <li class="main-against">Weak Against:</li>
+            <li data-fontColor class="main-strong">Fire</li>
+            <li data-fontColor class="main-strong">Flying</li>
+            <li data-fontColor class="main-strong">Rock</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-types" data-types>
+        <p class="main-type" data-type>Rock</p>
+        <div class="main-border">
+          <ul class="main-info">
+            <li class="main-against">Strong Against:</li>
+            <li data-fontColor class="main-weak">Fire</li>
+            <li data-fontColor class="main-weak">Ice</li>
+            <li data-fontColor class="main-weak">Flying</li>
+            <li data-fontColor class="main-weak">Bug</li>
+          </ul>
+          <ul class="main-info">
+            <li class="main-against">Weak Against:</li>
+            <li data-fontColor class="main-strong">Water</li>
+            <li data-fontColor class="main-strong">Grass</li>
+            <li data-fontColor class="main-strong">Fighting</li>
+            <li data-fontColor class="main-strong">Ground</li>
+          </ul>
+        </div>
+      </div>
+      <div id="main-types" class="main-types esconderLista" data-types>
+    </div>
+    <div class="main-typesStatus">
+      <p class="main-introduction">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis congue condimentum.
+        Nunc fringilla augue in metus consectetur, quis imperdiet magna elementum. Vestibulum varius
+        dictum nisi at egestas. Sed viverra nunc erat, sed pharetra metus congue sit amet. Proin sed
+        dictum dui, nec euismod erat. Morbi congue varius lacus sit amet semper. Phasellus facilisis nisi
+        vestibulum, accumsan leo et, viverra nibh.</p>
+      <div class="main-listStatus">
+        <h3 class="main-statusTitle">Paralyzed</h3>
+        <p class="main-statusInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis congue condimentum.
+          Nunc fringilla augue in metus consectetur, quis imperdiet magna elementum. Vestibulum varius
+          dictum nisi at egestas. Sed viverra nunc erat. Nunc fringilla augue in metus consectetur, quis imperdiet magna elementum. Vestibulum varius
+          dictum nisi at egestas. Sed viverra nunc erat, sed pharetra metus congue sit amet. Proin sed
+          dictum dui, nec euismod</p>
+      </div>
+      <div class="main-listStatus">
+        <h3 class="main-statusTitle">Burned</h3>
+        <p class="main-statusInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis congue condimentum.
+          Nunc fringilla augue in metus consectetur, quis imperdiet magna elementum. Vestibulum varius
+          dictum nisi at egestas. Sed viverra nunc erat. Nunc fringilla augue in metus consectetur, quis imperdiet magna elementum. Vestibulum varius
+          dictum nisi at egestas. Sed viverra nunc erat, sed pharetra metus congue sit amet. Proin sed
+          dictum dui, nec euismod</p>
+      </div>
+      <div class="main-listStatus">
+        <h3 class="main-statusTitle">Sleep</h3>
+        <p class="main-statusInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis congue condimentum.
+          Nunc fringilla augue in metus consectetur, quis imperdiet magna elementum. Vestibulum varius
+          dictum nisi at egestas. Sed viverra nunc erat. Nunc fringilla augue in metus consectetur, quis imperdiet magna elementum. Vestibulum varius
+          dictum nisi at egestas. Sed viverra nunc erat, sed pharetra metus congue sit amet. Proin sed
+          dictum dui, nec euismod</p>
+      </div>
+      <div class="main-listStatus">
+        <h3 class="main-statusTitle">Poison</h3>
+        <p class="main-statusInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis congue condimentum.
+          Nunc fringilla augue in metus consectetur, quis imperdiet magna elementum. Vestibulum varius
+          dictum nisi at egestas. Sed viverra nunc erat. Nunc fringilla augue in metus consectetur, quis imperdiet magna elementum. Vestibulum varius
+          dictum nisi at egestas. Sed viverra nunc erat, sed pharetra metus congue sit amet. Proin sed
+          dictum dui, nec euismod</p>
+      </div>
+      <div class="main-listStatus">
+        <h3 class="main-statusTitle">Confused</h3>
+        <p class="main-statusInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis congue condimentum.
+          Nunc fringilla augue in metus consectetur, quis imperdiet magna elementum. Vestibulum varius
+          dictum nisi at egestas. Sed viverra nunc erat. Nunc fringilla augue in metus consectetur, quis imperdiet magna elementum. Vestibulum varius
+          dictum nisi at egestas. Sed viverra nunc erat, sed pharetra metus congue sit amet. Proin sed
+          dictum dui, nec euismod</p>
+      </div>
+      <div class="main-listStatus">
+        <h3 class="main-statusTitle">Frozen</h3>
+        <p class="main-statusInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis congue condimentum.
+          Nunc fringilla augue in metus consectetur, quis imperdiet magna elementum. Vestibulum varius
+          dictum nisi at egestas. Sed viverra nunc erat. Nunc fringilla augue in metus consectetur, quis imperdiet magna elementum. Vestibulum varius
+          dictum nisi at egestas. Sed viverra nunc erat, sed pharetra metus congue sit amet. Proin sed
+          dictum dui, nec euismod</p>
+      </div>
+    </div>
+  </main>
+  <script src="../javascript/borderColor.js"></script>
+  <script src="../javascript/fontColor.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+@media screen and (min-width: 200px) {
+  .header {
+    background: #222224
+  }
+  .header-main {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .header-generation {
+    justify-content: center;
+  }
+
+  .header-background {
+    width: 100vw;
+  }
+
+  .header-game {
+    border-bottom: 1px solid #f0f0f0;
+    width: 130px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .header-main {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .header-background {
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header {
+    background: inherit;
+  }
+
+  .header-main {
+    padding: 2rem 0;
+  }
+
+  .header-background {
+    width: 180px;
+  }
+
+  .header-game {
+    border-bottom: none;
+  }
+}

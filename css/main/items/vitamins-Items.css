@@ -1,0 +1,29 @@
+.main-vitaminsItems {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.main-itemInfoVitamin {
+  margin: 1rem;
+  border: 5px solid black;
+  background: #A8A878;
+  text-align: center;
+  border-radius: 25px;
+  height: 250px;
+}
+
+.main-imageItemVitamin {
+  width: 50px;
+  height: 75px;
+  margin: .25rem 0;
+}
+
+.main-itemName {
+  font-size: 20px;
+  margin: .25rem 0;
+  margin-bottom: 1rem;
+}
+
+.main-itemExplication {
+  margin: auto 0;
+}

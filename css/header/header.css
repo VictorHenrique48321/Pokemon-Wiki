@@ -1,0 +1,64 @@
+body {
+  background: url("../../assets/imagem/depositphotos_120226496-stock-illustration-pokemon-go-pokeball-seamless-texture.jpg")
+}
+
+.header-main {
+  display: flex;
+  justify-content: center;
+}
+
+.header-generation {
+  display: flex;
+}
+
+.header-background {
+  height: 50px;
+  background: #222224;
+  display: flex;
+  justify-content: center;
+}
+
+.header-game {
+  display: inline-block;
+  text-align: center;
+  padding: 0.5rem;
+  color: #f0f0f0;
+  margin: auto 0
+}
+
+.header-game:hover {
+  border-left: #f00000 solid 3px;
+  cursor: pointer;
+}
+
+.fa-caret-right {
+  float: right;
+}
+
+.header-ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: .5rem;
+  background: #f00000;
+  width: 106px;
+  margin: 0 auto;
+}
+
+.header-link {
+  margin-top: 0.5rem;
+  text-align: center;
+  border: black solid 1px;
+  border-radius: 10px;
+  width: 80%;
+  color: #f0f0f0
+}
+
+.header-link:hover {
+  border-left: #f0f0f0 solid 4px;
+  cursor: pointer;
+}
+
+.esconderLista {
+  display: none;
+}

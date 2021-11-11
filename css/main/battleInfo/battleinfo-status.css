@@ -1,0 +1,21 @@
+.main-listStatus {
+  width: 90%;
+  margin: 2rem auto;
+}
+
+.main-statusTitle {
+  font-size: 24px;
+  border-bottom: 1px solid black;
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.5rem;
+  width: 80%;
+  color: #f0f0f0
+}
+
+.main-statusInfo {
+  width: 80%;
+  font-size: 18px;
+  color: black ;
+  background-color: #f0f0f0;
+  padding: 1rem;
+}
