@@ -1,9 +1,4 @@
-.main-stonesItems {
-  display: grid;
-  grid-template-columns: 20% 20% 20% 20% 20%;
-}
-
-.main-itemInfo {
+.main-itemInfoStone {
   margin: 1rem;
   border: 5px solid black;
   background: #f1a601;
@@ -12,18 +7,8 @@
   height: 250px;
 }
 
-.main-imageItem {
+.main-imageItemStone {
   width: 50px;
   height: 50px;
   margin: .25rem 0;
-}
-
-.main-itemName {
-  font-size: 20px;
-  margin: .25rem 0;
-  margin-bottom: 1rem;
-}
-
-.main-itemExplication {
-  margin: auto 0;
 }

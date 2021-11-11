@@ -1,14 +1,14 @@
-.main-itemInfoPokeball {
+.main-itemInfoStatusHeal {
   margin: 1rem;
   border: 5px solid black;
-  background: #0096c7;
+  background: #A8B820;
   text-align: center;
   border-radius: 25px;
   height: 250px;
 }
 
-.main-imageItemPokeball {
+.main-imageItemStatusHeal {
   width: 50px;
-  height: 50px;
+  height: 65px;
   margin: .25rem 0;
 }
