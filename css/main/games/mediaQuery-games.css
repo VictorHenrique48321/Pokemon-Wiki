@@ -7,3 +7,18 @@
     width: 90%;
   }
 }
+
+@media screen and (min-width: 500px){
+
+  .main-starters {
+    height: 200px;
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 900px){
+
+  .main-games {
+    width: 60%;
+  }
+}
