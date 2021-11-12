@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/header/header.css">
+  <link rel="stylesheet" href="../css/main/main.css">
+  <link rel="stylesheet" href="../css/main/pokedex/pokemonForm-pokedex.css">
+  <link rel="stylesheet" href="../css/main/pokedex/pokemonPokedex-pokedex.css">
+  <link rel="stylesheet" href="../css/main/mediaQuery.css">
+  <link rel="stylesheet" href="../css/header/mediaQuery.css">
+  <title>Pagina inicial</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header-main" data-main>
+      <div class="header-generation" data-generation>
+        <div class="header-background">
+          <p class="header-game" data-game><a href=./home.html>Home</a></p>
+        </div>
+      </div>
+      <div class="header-generation" data-generation>
+        <div class="header-background">
+          <p class="header-game" data-game><a href="./battleInfo.html">Battle Info</a></p>
+        </div>
+      </div>
+      <div class="header-generation" data-generation>
+        <div class="header-background">
+          <p class="header-game" data-game><a href="./items.html">Items</a></p>
+        </div>
+      </div>
+      <div class="header-generation" data-generation>
+        <div class="header-background">
+          <p class="header-game" data-game><a href="./pokedex.html">Pokedex</a></p>
+        </div>
+      </div>
+      <div class="header-generation" data-generation>
+        <div class="header-background">
+          <p class="header-game" data-version>Games</p>
+        </div>
+      </div>
+      <div class="header-generation" data-generation>
+        <div class="header-background">
+          <p class="header-game" data-game><a href="#">My Team</a></p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="main-header">
+      <h1 class="main-title">Pokemon Database</h1>
+      <p class="main-introduction">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis congue condimentum.
+        Nunc fringilla augue in metus consectetur, quis imperdiet magna elementum. Vestibulum varius
+        dictum nisi at egestas. Sed viverra nunc erat, sed pharetra metus congue sit amet. Proin sed
+        dictum dui, nec euismod erat. Morbi congue varius lacus sit amet semper. Phasellus facilisis nisi
+        vestibulum, accumsan leo et, viverra nibh.
+      </p>
+    </div>
+    <div class="main-search">
+      <form class="main-form">
+        <label for="write" class="main-pokemonSearch"></label>
+        <input name="write" type="text" class="main-searchType" placeholder="Write Pokemon Name">
+        <label for="type" class="main-typeList"></label>
+        <input class="main-pokemonTypeSearch" list="types" name="type" id="type" placeholder="Select Pokemon Type">
+        <datalist id="types" class="main-pokemonTypeDataList">
+          <option value="Grass">
+          <option value="Fire">
+          <option value="Water">
+          <option value="Flying">
+          <option value="Eletric">
+          <option value="Poison">
+          <option value="Normal">
+          <option value="Ice">
+          <option value="Psychic">
+          <option value="Ground">
+          <option value="Ghost">
+          <option value="Fighting">
+          <option value="Dragon">
+          <option value="Bug">
+          <option value="Rock">
+        </datalist>
+        <button class="main-searchButton" type="button" name="button">Search</button>
+      </form>
+    </div>
+    <div class="main-pokedex">
+      <div class="main-pokemon">
+        <img class="main-pokemonImage"src="..\assets\imagem\Pokedex\bulbasaur.png" alt="Bulbasaur">
+        <div class="main-pokemonStatus">
+          <p class="main-pokemonIndex">#001</p>
+          <p class="main-pokemonName">Bulbasaur</p>
+          <ul class="main-pokemonTypes">
+            <li class="main-pokemonType" data-fontColor>Grass</li>
+            <li class="main-pokemonType" data-fontColor>Poison</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-pokemon">
+        <img class="main-pokemonImage"src="..\assets\imagem\Pokedex\ivysaur.png" alt="Ivysaur">
+        <div class="main-pokemonStatus">
+          <p class="main-pokemonIndex">#002</p>
+          <p class="main-pokemonName">Ivysaur</p>
+          <ul class="main-pokemonTypes">
+            <li class="main-pokemonType" data-fontColor>Grass</li>
+            <li class="main-pokemonType" data-fontColor>Poison</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-pokemon">
+        <img class="main-pokemonImage"src="..\assets\imagem\Pokedex\venusaur.png" alt="Venusaur">
+        <div class="main-pokemonStatus">
+          <p class="main-pokemonIndex">#003</p>
+          <p class="main-pokemonName">Venusaur</p>
+          <ul class="main-pokemonTypes">
+            <li class="main-pokemonType" data-fontColor>Grass</li>
+            <li class="main-pokemonType" data-fontColor>Poison</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-pokemon">
+        <img class="main-pokemonImage"src="..\assets\imagem\Pokedex\charmander.png" alt="Charmander">
+        <div class="main-pokemonStatus">
+          <p class="main-pokemonIndex">#004</p>
+          <p class="main-pokemonName">Charmander</p>
+          <ul class="main-pokemonTypes">
+            <li class="main-pokemonType" data-fontColor>Fire</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-pokemon">
+        <img class="main-pokemonImage"src="..\assets\imagem\Pokedex\charmeleon.png" alt="Charmeleon">
+        <div class="main-pokemonStatus">
+          <p class="main-pokemonIndex">#005</p>
+          <p class="main-pokemonName">Charmeleon</p>
+          <ul class="main-pokemonTypes">
+            <li class="main-pokemonType" data-fontColor>Fire</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-pokemon">
+        <img class="main-pokemonImage"src="..\assets\imagem\Pokedex\charizard.png" alt="Charizard">
+        <div class="main-pokemonStatus">
+          <p class="main-pokemonIndex">#006</p>
+          <p class="main-pokemonName">Charizard</p>
+          <ul class="main-pokemonTypes">
+            <li class="main-pokemonType" data-fontColor>Fire</li>
+            <li class="main-pokemonType" data-fontColor>Flying</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-pokemon">
+        <img class="main-pokemonImage"src="..\assets\imagem\Pokedex\squirtle.png" alt="Squirtle">
+        <div class="main-pokemonStatus">
+          <p class="main-pokemonIndex">#007</p>
+          <p class="main-pokemonName">Squirtle</p>
+          <ul class="main-pokemonTypes">
+            <li class="main-pokemonType" data-fontColor>Water</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-pokemon">
+        <img class="main-pokemonImage"src="..\assets\imagem\Pokedex\wartortle.png" alt="Wartortle">
+        <div class="main-pokemonStatus">
+          <p class="main-pokemonIndex">#008</p>
+          <p class="main-pokemonName">Wartortle</p>
+          <ul class="main-pokemonTypes">
+            <li class="main-pokemonType" data-fontColor>Water</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-pokemon">
+        <img class="main-pokemonImage"src="..\assets\imagem\Pokedex\blastoise.png" alt="Blastoise">
+        <div class="main-pokemonStatus">
+          <p class="main-pokemonIndex">#009</p>
+          <p class="main-pokemonName">Blastoise</p>
+          <ul class="main-pokemonTypes">
+            <li class="main-pokemonType" data-fontColor>Water</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-pokemon">
+        <img class="main-pokemonImage"src="..\assets\imagem\Pokedex\caterpie.png" alt="Caterpie">
+        <div class="main-pokemonStatus">
+          <p class="main-pokemonIndex">#010</p>
+          <p class="main-pokemonName">Caterpie</p>
+          <ul class="main-pokemonTypes">
+            <li class="main-pokemonType" data-fontColor>Bug</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-pokemon">
+        <img class="main-pokemonImage"src="..\assets\imagem\Pokedex\metapod.png" alt="metapod">
+        <div class="main-pokemonStatus">
+          <p class="main-pokemonIndex">#011</p>
+          <p class="main-pokemonName">metapod</p>
+          <ul class="main-pokemonTypes">
+            <li class="main-pokemonType" data-fontColor>Bug</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-pokemon">
+        <img class="main-pokemonImage"src="..\assets\imagem\Pokedex\Butterfree.png" alt="Butterfree">
+        <div class="main-pokemonStatus">
+          <p class="main-pokemonIndex">#012</p>
+          <p class="main-pokemonName">Butterfree</p>
+          <ul class="main-pokemonTypes">
+            <li class="main-pokemonType" data-fontColor>Bug</li>
+            <li class="main-pokemonType" data-fontColor>Flying</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-pokemon">
+        <img class="main-pokemonImage"src="..\assets\imagem\Pokedex\Weedle.png" alt="Weedle">
+        <div class="main-pokemonStatus">
+          <p class="main-pokemonIndex">#013</p>
+          <p class="main-pokemonName">Weedle</p>
+          <ul class="main-pokemonTypes">
+            <li class="main-pokemonType" data-fontColor>Bug</li>
+            <li class="main-pokemonType" data-fontColor>Poison</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-pokemon">
+        <img class="main-pokemonImage"src="..\assets\imagem\Pokedex\Kakuna.png" alt="Kakuna">
+        <div class="main-pokemonStatus">
+          <p class="main-pokemonIndex">#014</p>
+          <p class="main-pokemonName">Kakuna</p>
+          <ul class="main-pokemonTypes">
+            <li class="main-pokemonType" data-fontColor>Bug</li>
+            <li class="main-pokemonType" data-fontColor>Poison</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-pokemon">
+        <img class="main-pokemonImage"src="..\assets\imagem\Pokedex\Beedrill.png" alt="Beedrill">
+        <div class="main-pokemonStatus">
+          <p class="main-pokemonIndex">#006</p>
+          <p class="main-pokemonName">Beedrill</p>
+          <ul class="main-pokemonTypes">
+            <li class="main-pokemonType" data-fontColor>Bug</li>
+            <li class="main-pokemonType" data-fontColor>Poison</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-pokemon">
+        <img class="main-pokemonImage"src="..\assets\imagem\Pokedex\Pidgey.png" alt="Pidgey">
+        <div class="main-pokemonStatus">
+          <p class="main-pokemonIndex">#013</p>
+          <p class="main-pokemonName">Pidgey</p>
+          <ul class="main-pokemonTypes">
+            <li class="main-pokemonType" data-fontColor>Normal</li>
+            <li class="main-pokemonType" data-fontColor>Flying</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-pokemon">
+        <img class="main-pokemonImage"src="..\assets\imagem\Pokedex\Pidgeotto.png" alt="Pidgeotto">
+        <div class="main-pokemonStatus">
+          <p class="main-pokemonIndex">#014</p>
+          <p class="main-pokemonName">Pidgeotto</p>
+          <ul class="main-pokemonTypes">
+            <li class="main-pokemonType" data-fontColor>Normal</li>
+            <li class="main-pokemonType" data-fontColor>Flying</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-pokemon">
+        <img class="main-pokemonImage"src="..\assets\imagem\Pokedex\Pidgeot.png" alt="Pidgeot">
+        <div class="main-pokemonStatus">
+          <p class="main-pokemonIndex">#006</p>
+          <p class="main-pokemonName">Pidgeot</p>
+          <ul class="main-pokemonTypes">
+            <li class="main-pokemonType" data-fontColor>Normal</li>
+            <li class="main-pokemonType" data-fontColor>Flying</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-pokemon">
+        <img class="main-pokemonImage"src="..\assets\imagem\Pokedex\Rattata.png" alt="Rattata">
+        <div class="main-pokemonStatus">
+          <p class="main-pokemonIndex">#014</p>
+          <p class="main-pokemonName">Rattata</p>
+          <ul class="main-pokemonTypes">
+            <li class="main-pokemonType" data-fontColor>Normal</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-pokemon">
+        <img class="main-pokemonImage"src="..\assets\imagem\Pokedex\Raticate.png" alt="Raticate">
+        <div class="main-pokemonStatus">
+          <p class="main-pokemonIndex">#006</p>
+          <p class="main-pokemonName">Raticate</p>
+          <ul class="main-pokemonTypes">
+            <li class="main-pokemonType" data-fontColor>Normal</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-pokemon">
+        <img class="main-pokemonImage"src="..\assets\imagem\Pokedex\Spearow.png" alt="Spearow">
+        <div class="main-pokemonStatus">
+          <p class="main-pokemonIndex">#014</p>
+          <p class="main-pokemonName">Spearow</p>
+          <ul class="main-pokemonTypes">
+            <li class="main-pokemonType" data-fontColor>Normal</li>
+            <li class="main-pokemonType" data-fontColor>Flying</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-pokemon">
+        <img class="main-pokemonImage"src="..\assets\imagem\Pokedex\Fearow.png" alt="Fearow">
+        <div class="main-pokemonStatus">
+          <p class="main-pokemonIndex">#006</p>
+          <p class="main-pokemonName">Fearow</p>
+          <ul class="main-pokemonTypes">
+            <li class="main-pokemonType" data-fontColor>Normal</li>
+            <li class="main-pokemonType" data-fontColor>Flying</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-pokemon">
+        <img class="main-pokemonImage"src="..\assets\imagem\Pokedex\Ekans.png" alt="Ekans">
+        <div class="main-pokemonStatus">
+          <p class="main-pokemonIndex">#014</p>
+          <p class="main-pokemonName">Ekans</p>
+          <ul class="main-pokemonTypes">
+            <li class="main-pokemonType" data-fontColor>Poison</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-pokemon">
+        <img class="main-pokemonImage"src="..\assets\imagem\Pokedex\Arbok.png" alt="Arbok">
+        <div class="main-pokemonStatus">
+          <p class="main-pokemonIndex">#006</p>
+          <p class="main-pokemonName">Arbok</p>
+          <ul class="main-pokemonTypes">
+            <li class="main-pokemonType" data-fontColor>Poison</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-pokemon">
+        <img class="main-pokemonImage"src="..\assets\imagem\Pokedex\Pikachu.png" alt="Pikachu">
+        <div class="main-pokemonStatus">
+          <p class="main-pokemonIndex">#014</p>
+          <p class="main-pokemonName">Pikachu</p>
+          <ul class="main-pokemonTypes">
+            <li class="main-pokemonType" data-fontColor>Eletric</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-pokemon">
+        <img class="main-pokemonImage"src="..\assets\imagem\Pokedex\Raichu.png" alt="Raichu">
+        <div class="main-pokemonStatus">
+          <p class="main-pokemonIndex">#006</p>
+          <p class="main-pokemonName">Raichu</p>
+          <ul class="main-pokemonTypes">
+            <li class="main-pokemonType" data-fontColor>Eletric</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-pokemon">
+        <img class="main-pokemonImage"src="..\assets\imagem\Pokedex\Sandshrew.png" alt="Sandshrew">
+        <div class="main-pokemonStatus">
+          <p class="main-pokemonIndex">#014</p>
+          <p class="main-pokemonName">Sandshrew</p>
+          <ul class="main-pokemonTypes">
+            <li class="main-pokemonType" data-fontColor>Ground</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-pokemon">
+        <img class="main-pokemonImage"src="..\assets\imagem\Pokedex\Sandslash.png" alt="Sandslash">
+        <div class="main-pokemonStatus">
+          <p class="main-pokemonIndex">#006</p>
+          <p class="main-pokemonName">Sandslash</p>
+          <ul class="main-pokemonTypes">
+            <li class="main-pokemonType" data-fontColor>Ground</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-pokemon">
+        <img class="main-pokemonImage"src="..\assets\imagem\Pokedex\Nidoran1.png" alt="Nidoran">
+        <div class="main-pokemonStatus">
+          <p class="main-pokemonIndex">#006</p>
+          <p class="main-pokemonName">Nidoran</p>
+          <ul class="main-pokemonTypes">
+            <li class="main-pokemonType" data-fontColor>Poison</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-pokemon">
+        <img class="main-pokemonImage"src="..\assets\imagem\Pokedex\Nidorina.png" alt="Nidorina">
+        <div class="main-pokemonStatus">
+          <p class="main-pokemonIndex">#014</p>
+          <p class="main-pokemonName">Nidorina</p>
+          <ul class="main-pokemonTypes">
+            <li class="main-pokemonType" data-fontColor>Poison</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-pokemon">
+        <img class="main-pokemonImage"src="..\assets\imagem\Pokedex\Nidoqueen.png" alt="Nidoqueen">
+        <div class="main-pokemonStatus">
+          <p class="main-pokemonIndex">#006</p>
+          <p class="main-pokemonName">Nidoqueen</p>
+          <ul class="main-pokemonTypes">
+            <li class="main-pokemonType" data-fontColor>Poison</li>
+            <li class="main-pokemonType" data-fontColor>Ground</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-pokemon">
+        <img class="main-pokemonImage"src="..\assets\imagem\Pokedex\Nidoran.png" alt="Nidoran">
+        <div class="main-pokemonStatus">
+          <p class="main-pokemonIndex">#006</p>
+          <p class="main-pokemonName">Nidoran</p>
+          <ul class="main-pokemonTypes">
+            <li class="main-pokemonType" data-fontColor>Poison</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-pokemon">
+        <img class="main-pokemonImage"src="..\assets\imagem\Pokedex\Nidorino.png" alt="Nidorino">
+        <div class="main-pokemonStatus">
+          <p class="main-pokemonIndex">#014</p>
+          <p class="main-pokemonName">Nidorino</p>
+          <ul class="main-pokemonTypes">
+            <li class="main-pokemonType" data-fontColor>Poison</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-pokemon">
+        <img class="main-pokemonImage"src="..\assets\imagem\Pokedex\NidoKing.png" alt="NidoKing">
+        <div class="main-pokemonStatus">
+          <p class="main-pokemonIndex">#006</p>
+          <p class="main-pokemonName">NidoKing</p>
+          <ul class="main-pokemonTypes">
+            <li class="main-pokemonType" data-fontColor>Poison</li>
+            <li class="main-pokemonType" data-fontColor>Ground</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-pokemon">
+        <img class="main-pokemonImage"src="..\assets\imagem\Pokedex\Clefairy.png" alt="Clefairy">
+        <div class="main-pokemonStatus">
+          <p class="main-pokemonIndex">#014</p>
+          <p class="main-pokemonName">Clefairy</p>
+          <ul class="main-pokemonTypes">
+            <li class="main-pokemonType" data-fontColor>Normal</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-pokemon">
+        <img class="main-pokemonImage"src="..\assets\imagem\Pokedex\Clefable.png" alt="Clefable">
+        <div class="main-pokemonStatus">
+          <p class="main-pokemonIndex">#006</p>
+          <p class="main-pokemonName">Clefable</p>
+          <ul class="main-pokemonTypes">
+            <li class="main-pokemonType" data-fontColor>Normal</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-pokemon">
+        <img class="main-pokemonImage"src="..\assets\imagem\Pokedex\Vulpix.png" alt="Vulpix">
+        <div class="main-pokemonStatus">
+          <p class="main-pokemonIndex">#014</p>
+          <p class="main-pokemonName">Vulpix</p>
+          <ul class="main-pokemonTypes">
+            <li class="main-pokemonType" data-fontColor>Fire</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-pokemon">
+        <img class="main-pokemonImage"src="..\assets\imagem\Pokedex\NineTales.png" alt="NineTales">
+        <div class="main-pokemonStatus">
+          <p class="main-pokemonIndex">#006</p>
+          <p class="main-pokemonName">NineTales</p>
+          <ul class="main-pokemonTypes">
+            <li class="main-pokemonType" data-fontColor>Fire</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-pokemon">
+        <img class="main-pokemonImage"src="..\assets\imagem\Pokedex\Jigglypuff.png" alt="Jigglypuff">
+        <div class="main-pokemonStatus">
+          <p class="main-pokemonIndex">#014</p>
+          <p class="main-pokemonName">Jigglypuff</p>
+          <ul class="main-pokemonTypes">
+            <li class="main-pokemonType" data-fontColor>Normal</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-pokemon">
+        <img class="main-pokemonImage"src="..\assets\imagem\Pokedex\Wigglytuff.png" alt="Wigglytuff">
+        <div class="main-pokemonStatus">
+          <p class="main-pokemonIndex">#006</p>
+          <p class="main-pokemonName">Wigglytuff</p>
+          <ul class="main-pokemonTypes">
+            <li class="main-pokemonType" data-fontColor>Normal</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-pokemon">
+        <img class="main-pokemonImage"src="..\assets\imagem\Pokedex\Zubat.png" alt="Zubat">
+        <div class="main-pokemonStatus">
+          <p class="main-pokemonIndex">#014</p>
+          <p class="main-pokemonName">Zubat</p>
+          <ul class="main-pokemonTypes">
+            <li class="main-pokemonType" data-fontColor>Poison</li>
+            <li class="main-pokemonType" data-fontColor>Flying</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-pokemon">
+        <img class="main-pokemonImage"src="..\assets\imagem\Pokedex\Golbat.png" alt="Golbat">
+        <div class="main-pokemonStatus">
+          <p class="main-pokemonIndex">#006</p>
+          <p class="main-pokemonName">Golbat</p>
+          <ul class="main-pokemonTypes">
+            <li class="main-pokemonType" data-fontColor>Poison</li>
+            <li class="main-pokemonType" data-fontColor>Flying</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-pokemon">
+        <img class="main-pokemonImage"src="..\assets\imagem\Pokedex\Oddish.png" alt="Oddish">
+        <div class="main-pokemonStatus">
+          <p class="main-pokemonIndex">#006</p>
+          <p class="main-pokemonName">Oddish</p>
+          <ul class="main-pokemonTypes">
+            <li class="main-pokemonType" data-fontColor>Grass</li>
+            <li class="main-pokemonType" data-fontColor>Poison</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-pokemon">
+        <img class="main-pokemonImage"src="..\assets\imagem\Pokedex\Gloom.png" alt="Gloom">
+        <div class="main-pokemonStatus">
+          <p class="main-pokemonIndex">#014</p>
+          <p class="main-pokemonName">Gloom</p>
+          <ul class="main-pokemonTypes">
+            <li class="main-pokemonType" data-fontColor>Grass</li>
+            <li class="main-pokemonType" data-fontColor>Poison</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-pokemon">
+        <img class="main-pokemonImage"src="..\assets\imagem\Pokedex\Vileplume.png" alt="Vileplume">
+        <div class="main-pokemonStatus">
+          <p class="main-pokemonIndex">#006</p>
+          <p class="main-pokemonName">Vileplume</p>
+          <ul class="main-pokemonTypes">
+            <li class="main-pokemonType" data-fontColor>Grass</li>
+            <li class="main-pokemonType" data-fontColor>Poison</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-pokemon">
+        <img class="main-pokemonImage"src="..\assets\imagem\Pokedex\Paras.png" alt="Paras">
+        <div class="main-pokemonStatus">
+          <p class="main-pokemonIndex">#014</p>
+          <p class="main-pokemonName">Paras</p>
+          <ul class="main-pokemonTypes">
+            <li class="main-pokemonType" data-fontColor>Bug</li>
+            <li class="main-pokemonType" data-fontColor>Grass</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-pokemon">
+        <img class="main-pokemonImage"src="..\assets\imagem\Pokedex\Parasect.png" alt="Parasect">
+        <div class="main-pokemonStatus">
+          <p class="main-pokemonIndex">#006</p>
+          <p class="main-pokemonName">Parasect</p>
+          <ul class="main-pokemonTypes">
+            <li class="main-pokemonType" data-fontColor>Bug</li>
+            <li class="main-pokemonType" data-fontColor>Grass</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-pokemon">
+        <img class="main-pokemonImage"src="..\assets\imagem\Pokedex\Venonat.png" alt="Venonat">
+        <div class="main-pokemonStatus">
+          <p class="main-pokemonIndex">#014</p>
+          <p class="main-pokemonName">Venonat</p>
+          <ul class="main-pokemonTypes">
+            <li class="main-pokemonType" data-fontColor>Bug</li>
+            <li class="main-pokemonType" data-fontColor>Poison</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-pokemon">
+        <img class="main-pokemonImage"src="..\assets\imagem\Pokedex\Venomoth.png" alt="Venomoth">
+        <div class="main-pokemonStatus">
+          <p class="main-pokemonIndex">#006</p>
+          <p class="main-pokemonName">Venomoth</p>
+          <ul class="main-pokemonTypes">
+            <li class="main-pokemonType" data-fontColor>Bug</li>
+            <li class="main-pokemonType" data-fontColor>Poison</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-pokemon">
+        <img class="main-pokemonImage"src="..\assets\imagem\Pokedex\Diglett.png" alt="Venonat">
+        <div class="main-pokemonStatus">
+          <p class="main-pokemonIndex">#014</p>
+          <p class="main-pokemonName">Diglett</p>
+          <ul class="main-pokemonTypes">
+            <li class="main-pokemonType" data-fontColor>Ground</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-pokemon">
+        <img class="main-pokemonImage"src="..\assets\imagem\Pokedex\DugTrio.png" alt="DugTrio">
+        <div class="main-pokemonStatus">
+          <p class="main-pokemonIndex">#006</p>
+          <p class="main-pokemonName">DugTrio</p>
+          <ul class="main-pokemonTypes">
+            <li class="main-pokemonType" data-fontColor>Ground</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-pokemon">
+        <img class="main-pokemonImage"src="..\assets\imagem\Pokedex\Meowth.png" alt="Meowth">
+        <div class="main-pokemonStatus">
+          <p class="main-pokemonIndex">#014</p>
+          <p class="main-pokemonName">Meowth</p>
+          <ul class="main-pokemonTypes">
+            <li class="main-pokemonType" data-fontColor>Normal</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-pokemon">
+        <img class="main-pokemonImage"src="..\assets\imagem\Pokedex\Persian.png" alt="Persian">
+        <div class="main-pokemonStatus">
+          <p class="main-pokemonIndex">#006</p>
+          <p class="main-pokemonName">Persian</p>
+          <ul class="main-pokemonTypes">
+            <li class="main-pokemonType" data-fontColor>Persian</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-pokemon">
+        <img class="main-pokemonImage"src="..\assets\imagem\Pokedex\Psyduck.png" alt="Psyduck">
+        <div class="main-pokemonStatus">
+          <p class="main-pokemonIndex">#014</p>
+          <p class="main-pokemonName">Psyduck</p>
+          <ul class="main-pokemonTypes">
+            <li class="main-pokemonType" data-fontColor>Water</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-pokemon">
+        <img class="main-pokemonImage"src="..\assets\imagem\Pokedex\Golduck.png" alt="Golduck">
+        <div class="main-pokemonStatus">
+          <p class="main-pokemonIndex">#006</p>
+          <p class="main-pokemonName">Golduck</p>
+          <ul class="main-pokemonTypes">
+            <li class="main-pokemonType" data-fontColor>Water</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="../javascript\fontColor.js"></script>
+  <script src="../javascript\indexAdd.js"></script>
+</body>
+</html>
