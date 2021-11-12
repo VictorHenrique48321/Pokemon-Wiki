@@ -1,0 +1,19 @@
+.main-gameplay {
+  width: 90%;
+  font-size: 18px;
+  color: black ;
+  background-color: #f0f0f0;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.main-starters {
+  height: 200px;
+  width: 400px;
+  margin: 1rem auto;
+  display: block;
+}
+
+.hideGame {
+  display: none;
+}
