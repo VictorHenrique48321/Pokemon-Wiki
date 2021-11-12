@@ -2,7 +2,6 @@
   margin-right: 2.5%;
   margin-left: 2.5%;
   display: grid;
-  grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
   grid-column-gap: .1rem;
   text-align: center;
 }

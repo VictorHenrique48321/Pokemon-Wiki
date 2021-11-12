@@ -8,7 +8,6 @@
 }
 
 .main-searchType {
-  width: 40%;
   height: 40px;
   border: 2px solid black;
   border-radius: 20px;
@@ -16,7 +15,6 @@
 }
 
 .main-pokemonTypeSearch{
-  width: 30%;
   height: 40px;
   border: 2px solid black;
   border-radius: 20px;
@@ -24,7 +22,6 @@
 }
 
 .main-searchButton {
-  width: 20%;
   height: 40px;
   border: 2px solid black;
   border-radius: 20px;
