@@ -1,6 +1,6 @@
 const typeFont = document.querySelectorAll("[data-fontColor]")
 
-const tipos = [
+const tiposCor = [
   "Grass","#78C850",
   "Fire","#F08030",
   "Water" ,"#0096c7",
@@ -19,8 +19,8 @@ const tipos = [
 ]
 
 for(let i = 0; i < typeFont.length; i++){
-  if(tipos.includes(typeFont[i].innerHTML)){
-    const positionColor = tipos.indexOf(typeFont[i].innerHTML)
-    typeFont[i].style.backgroundColor = tipos[positionColor+1]
+  if(tiposCor.includes(typeFont[i].innerHTML)){
+    const positionColor = tiposCor.indexOf(typeFont[i].innerHTML)
+    typeFont[i].style.backgroundColor = tiposCor[positionColor+1]
   }
 }
