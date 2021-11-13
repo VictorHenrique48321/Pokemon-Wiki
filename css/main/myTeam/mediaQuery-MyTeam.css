@@ -1,0 +1,62 @@
+@media screen and (min-width: 0){
+  .main-myTeam {
+    flex-direction: column;
+  }
+  .main-pokemon {
+    width: 100%;
+  }
+
+  .main-showPokemons {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .main-pokemonStatus {
+    width: 50%;
+    margin: 0;
+    border: 0;
+    box-shadow:inset 0px 0px 0px 1px #000;
+  }
+}
+
+@media screen and (min-width: 600px){
+  .main-myTeam {
+    flex-direction: row;
+  }
+  .main-pokemon {
+    width: 50%;
+  }
+
+  .main-pokemonStatus {
+    width: 33.33%;
+  }
+}
+
+@media screen and (min-width: 1000px){
+  .main-myTeam {
+    flex-direction: row;
+  }
+  .main-pokemon {
+    width: 33.33%;
+  }
+
+  .main-showPokemons {
+    width: 100%;
+  }
+
+}
+
+@media screen and (min-width: 1200px){
+
+  .main-showPokemons {
+    width: 90%;
+    flex-wrap: nowrap;
+  }
+
+  .main-pokemonStatus {
+    width: 20%;
+    border: 2px solid black;
+    margin-left: 0.1rem;
+    box-shadow:inset 0px 0px 0px 0px #000;
+  }
+}
