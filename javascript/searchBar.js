@@ -1,22 +1,22 @@
 const buttonSearch = document.querySelector("[data-button]")
+const pokemonTypes = document.querySelectorAll(".main-pokemonType")
+const pokemonNames = document.querySelectorAll(".main-pokemonName")
 
-buttonSearch.addEventListener("click", (evento) =>{
+document.addEventListener("keyup", () =>{
   removerClass()
   const searchType = document.querySelector("[data-pokemonType]").value
   const searchName = document.querySelector("[data-searchBar]").value
-
-  const pokemonTypes = document.querySelectorAll(".main-pokemonType")
-  const pokemonNames = document.querySelectorAll(".main-pokemonName")
 
   if(searchName.length <= 0 && searchType.length <= 0){
     return
   }
 
   const searchedName = searchName.toLowerCase()
+  const regex = new RegExp(""+searchedName+"");
 
   pokemonNames.forEach(pokemonName => {
     const nameLowerCase = pokemonName.innerHTML.toLowerCase()
-    if(searchedName == nameLowerCase){
+    if(nameLowerCase.match(regex)){
       const parent = pokemonName.parentElement.parentElement
       parent.style.order = "-2"
     } else {
@@ -28,6 +28,7 @@ buttonSearch.addEventListener("click", (evento) =>{
 })
 
 function removerClass(){
+  console.log("ola")
   const allPokemons = document.querySelectorAll(".main-pokemon")
 
   allPokemons.forEach(pokemon => {

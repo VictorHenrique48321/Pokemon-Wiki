@@ -33,3 +33,20 @@
   margin: 1rem auto;
   text-transform: uppercase;
 }
+
+.main-table {
+  width: 90%;
+  margin: 25px auto 15px auto;
+}
+
+.table-header {
+  font-size: 18px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.main-tableInfo {
+  text-transform: capitalize;
+  padding: 5px;
+  border-bottom: 1px solid black;
+}
